@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url('../font/Yekan.ttf') format("ttf");
+    src: url('../font/Yekan.svg') format("svg"),
+        url('../font/Yekan.woff2') format("woff2"),
+        url('../font/Yekan.woff') format("woff"),
+        url('../font/Yekan.eot') format("eot");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
