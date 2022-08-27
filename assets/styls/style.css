@@ -41,4 +41,5 @@ ul {
 h1 {
     font-size: 2.5rem;
     font-family: "IRANYekan(FaNum) Bold";
+    vertical-align: baseline;
 }
