@@ -1,0 +1,49 @@
+/* begin main */
+/* begin .top_contant */
+h1 {
+    font-size: 2rem;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_contant .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (min-width: 320px) {
+    .container {
+        max-width: 276px;
+
+    }
+}
+
+@media only screen and (min-width: 667px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+/* end .top_contant */
+
+/* begin items */
+
+
+@media only screen and (min-width: 320px) {
+    .container {
+        max-width: 276px;
+
+    }
+}
+
+@media only screen and (min-width: 667px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+/* end items */
