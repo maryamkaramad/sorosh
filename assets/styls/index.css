@@ -1,22 +1,7 @@
 /* begin main */
-/* begin .top_contant */
-.top_contant h1 {
-    font-size: 2rem;
 
-    text-align: center;
-}
-
-
-.top_contant .p__one {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 1.1rem;
-
-}
-
-.top_contant .p__two {
-    text-align: center;
-    font-size: 1rem;
+body {
+    background-color: rgb(245, 245, 245);
 }
 
 .main {
@@ -25,126 +10,350 @@
     align-items: center;
 }
 
-@media only screen and (min-width: 320px) {
+p {
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+}
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+/* end maiin    */
+
+
+/* begin .container */
+.container {
+    width: 90%;
+    display: grid;
+    grid-template-areas:
+        'card__1'
+        'card__2'
+        'card__3'
+        'card__4'
+        'card__5'
+        'card__6'
+        'card__7';
+
+}
+
+
+
+@media screen and (min-width: 320px) {
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-areas:
+            'card__1'
+            'card__2'
+            'card__3'
+            'card__4'
+            'card__5'
+            'card__6'
+            'card__7';
+        gap: 2rem;
     }
 
-    .top {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
-@media only screen and (min-width: 768px) {
-
-
-    .top_contant h1 {
-        font-size: 3rem;
-
-        text-align: center;
-    }
-
-    .top_contant .p__one {
-        text-align: center;
-        font-weight: bolder;
-        font-size: 1.7rem;
-
-    }
-
-    .top_contant .p__two {
-        text-align: center;
-        font-size: 1.6rem;
-        width: 60%;
+@media screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+        display: grid;
+        grid-template-areas:
+            'card__1 card__1'
+            'card__3 card__2'
+            'card__4 card__5'
+            ' card__7 card__6';
+        gap: 4rem;
     }
 
 
 }
 
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 90%;
+        display: grid;
+        grid-template-areas:
+            'card__8 card__1'
+            'card__3 card__2'
+            'card__4 card__5'
+            ' card__7 card__6';
+        gap: 4rem;
+    }
+}
 
-@media only screen and (min-width: 1024px) {}
+/* end .container */
 
-/* end .top_contant */
 
-/* begin items */
 
-.item {
-    gap: 10px;
+
+/* begin .card__1 */
+
+.card.card__1 {
+    grid-area: card__1;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-bottom: 5px;
+    text-align: center;
 }
 
-.item button {
-    background-color: aqua;
-    width: 45%;
-    height: 23px;
-    border-radius: 2rem;
-    border: 0px;
-    color: #fff;
+.card__1.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card__1.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+    width: 50%;
+
+
+
+
+}
+
+.btn {
     background: #060E9F;
     background: linear-gradient(to right, #060E9F, #0062cc);
-}
-
-@media only screen and (min-width: 320px) {}
-
-@media only screen and (min-width:576px) {
-    .item {
-        display: flex;
-        align-items: flex-start;
-        width: 70%;
-        gap: 11px;
-    }
-
-    .item__item1,
-    .item__item2 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .item__item3 {
-        display: flex;
-        flex-direction: row;
-        width: 53%;
-    }
+    border-radius: 3rem;
+    width: 95%;
+    height: 38px;
+    box-shadow: 0 0 25px #d0d0d0;
+    border: none;
 
 }
 
+@media screen and (min-width: 320px) {}
 
-@media only screen and (min-width: 1024px) {}
+@media screen and (min-width: 768px) {
+    .card.card__1 {
+        grid-area: card__1;
+        grid-column: 1/3;
+        gap: 5rem;
+    }
 
-/* end items */
-/* begin card__top */
-.card__top {
+    .card__1.top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__1.button {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        align-self: flex-start;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card.card__1 {
+        grid-area: card__1;
+        grid-column: 1/2;
+
+    }
+
+    .card__1.top h2,
+    .card__1.top p {
+        align-self: flex-start;
+        text-align: right;
+    }
+}
+
+
+/* end .card__1 */
+
+
+
+/* begin .card__2 */
+
+.card__2 {
+    grid-area: "card__2";
+    width: 80%;
+    background: #060E9F;
+    background: linear-gradient(to right, #060E9F, #0062cc);
+    border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
     display: flex;
     justify-content: center;
-    width: 60%;
-    overflow: hidden;
-    vertical-align: baseline;
-
+    align-items: center;
 }
 
 
-.img {
+
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {
+    .card__2 {
+        grid-area: "card__2";
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+
+/* end .card__2 */
+
+
+
+
+/* begin .card__3 */
+
+.card__3 {
+    grid-area: "card__3";
+    grid-column: 1/2;
+}
+
+
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {
+    .card__3 {
+        grid-area: "card__3";
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+
+/* end .card__3 */
+
+
+/* begin .card__4 */
+.card__4 {
+    grid-area: "card__4";
+    width: 80%;
+    background: #060E9F;
     background: linear-gradient(to right, #060E9F, #0062cc);
-    border-radius: 275% 332% 254% 395%;
-    width: 100%;
-    height: 100%;
+    border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (min-width: 320px) {}
 
-@media only screen and (min-width: 768px) {}
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {
+    .card__4 {
+        grid-area: "card__4";
+    }
+}
+
+@media screen and (min-width: 1024px) {}
 
 
-@media only screen and (min-width: 1024px) {}
 
-/* end card__top */
+/* end .card__4 */
+
+/* 
+begin .card__5 */
+
+
+.card__5 {
+    grid-area: "card__5";
+}
+
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {
+    .card__5 {
+        grid-area: "card__5";
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+/* end .card__5 */
+
+
+
+.card__6 {
+    grid-area: "card__6";
+    width: 80%;
+    background: #060E9F;
+    background: linear-gradient(to right, #060E9F, #0062cc);
+    border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {
+    .card__6 {
+        grid-area: "card__6";
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+
+/* begin .card__7 */
+.card__7 {
+    grid-area: "card__7";
+}
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {
+    .card__7 {
+        grid-area: "card__7";
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+
+/* end .card__7 */
+
+/* begin card__8 */
+
+@media screen and (min-width: 320px) {}
+
+.card__8 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .card__8 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card__8 {
+        grid-area: "card__8";
+        grid-row: 1/2;
+        grid-column: 2/3;
+        width: 80%;
+        background: #060E9F;
+        background: linear-gradient(to right, #060E9F, #0062cc);
+        border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/* end card__8 */
