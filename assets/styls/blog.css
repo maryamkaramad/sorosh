@@ -66,18 +66,20 @@
 /* begin fooder_down */
 .footer_down {
     background: url(/assets/img/index/footer.png) #2d2d2d no-repeat;
+    background-position-x: 139%;
+    background-position-y: 18%;
     margin-top: 20px;
     width: 100%;
     height: 300px;
     background-size: 40%;
     z-index: -1;
-    float: right;
     position: fixed;
     bottom: 0;
+
 }
 
 .copy-right {
-    color: #686868;
+    color: #6e6868;
 
     font-size: 1.2rem;
     line-height: 1.6153846154;
@@ -92,28 +94,37 @@
     .footer_down {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        column-gap: 5px;
+        row-gap: 2rem;
     }
 
     .icon__footer {
-        margin: 0 5rem;
+        display: flex;
+        gap: 2rem;
     }
 
     .footer_down .logo {
-        height: 50%;
-        width: 56%;
+        height: 45px;
+        width: 100px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .footer_down .logo {
-        height: 30%;
-        width: 20%;
+        height: 78px;
+        width: 153px;
     }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .footer_down {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
 
 /* end fooder_down */
