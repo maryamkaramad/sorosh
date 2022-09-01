@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url('../font/Yekan.ttf') format("ttf");
+    src: url('../font/Yekan.svg') format("svg"),
+        url('../font/Yekan.woff2') format("woff2"),
+        url('../font/Yekan.woff') format("woff"),
+        url('../font/Yekan.eot') format("eot");
+}
+:root{
+    --color-more__information:darkgrey;
+    --color-text:#505050;
+    --color-text-a-hove:rgba(16, 94, 114, 0.8);
+}
+/* work sorosh start*/
+/* .blog{
+    display: flex;
+    justify-content: start;
+}  */
+.container__blog{
+    font-family: "iranyekan"; 
+    margin: auto;
+    color:var(--color-text);
+    max-width: 270px;
+}
+.img__margin{
+    width: 270px;
+    height: 270px;  
+    border-radius: 8px;  
+}
+h1{
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+a{
+    text-decoration: none;
+    color:var(--color-text);
+}
+h1 a:hover{
+    color:var(--color-text-a-hove);
+}
+h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+.text__blog{
+    line-height: 1.75;
+    font-size: 16px;
+    font-weight:300;
+    color: var(--color-text);
+    text-align: justify;
+    max-width: 270px;
+}
+.more__information{
+    color:var(--color-more__information);
+    border-bottom: 1px solid #505050;
+    font-size: 20px;
+}
+.more__information:hover{
+    color:var(--color-text);
+}
+.date{
+    display: inline;
+    padding-left: 5px;
+}
+.date:hover a{
+    border-bottom: 1px solid var(--color-text);
+    width: 50%;
+}
+i{
+    color:lightgray;
+    margin-bottom: 20px;
+}
+/* work__sorosh end*/
+/*cyber start*/
+
+/*cyber end*/
+
+@media  only screen and (min-width:768px){
+    .blog{
+        display: flex;
+        justify-content: center;
+    }
+    .container__blog{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        max-width: 50%;
+        margin: auto;
+        text-align: justify;
+    }
+}
+
+@media  only screen and (min-width:992px){
+    .blog{
+        display: flex;
+        justify-content: center;
+    }
+    .container__blog{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        max-width: 50%;
+        margin: auto;
+    }
+}
+@media  only screen and (min-width:1440px){
+    .blog{
+        display: flex;
+        justify-content: center;
+    }
+    .container__blog{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        max-width: 50%;
+        margin: auto;
+    }
+
+}
+/*320 667 1024*/
+
+
+
+
+/* start blogone*/
+
+.content__blogone{
+    font-family: "iranyekan";
+    line-height: 1.75;
+    font-size: 16px;
+    font-weight:300;
+    width:55%;
+    max-width: 270px;
+    text-align: justify;
+    margin: auto;
+}
+.content__blogone img{
+    width: 270px;
+    border-radius: 10px;
+}
+.button{  
+    border: 1px solid #9b9b9b;
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 10px;
+}
+.button:hover{
+    border-bottom: 2px solid black;
+    color: black;
+}
+.underline{
+    border-bottom: 1px solid #505050;
+    color: var(--color-text);
+}
+.underline:hover{
+    border-bottom: white;
+}
+a h1:hover{
+    color: var(--color-text-a-hove);
+}
+
+@media  only screen and (min-width:768px){
+    .content__blogone{
+        width: 65%;
+        max-width: 461px;
+    }
+    .content__blogone img{
+        width: 461px;
+        margin: auto;
+    } 
+}
+@media  only screen and (min-width:992px){
+    .content__blogone{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 900px;
+    }
+    .content__blogone img{
+        width: 461px;
+    }
+    .button{
+        max-width: 50px;
+        height: 25px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .button a{
+        padding: 5px 20px;
+    }
+}
+@media  only screen and (min-width:1440px){
+    .content__blogone{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 950px;
+    }
+    .img__blogone{
+        border-radius: 10px;
+    }
+    .button{
+        max-width: 50px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .button a{
+        padding: 5px 20px;
+    }
+}
