@@ -49,7 +49,7 @@ body {
 
 
 /* begin .container */
-.container {
+.main.container {
     width: 90%;
     display: grid;
     grid-template-areas:
@@ -66,7 +66,7 @@ body {
 
 
 @media screen and (min-width: 320px) {
-    .container {
+    .main.container {
         display: grid;
         grid-template-areas:
             'card__1'
@@ -82,7 +82,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .main .container {
         width: 85%;
         display: grid;
         grid-template-areas:
@@ -97,7 +97,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    .container {
+    .main.container {
         width: 85%;
         display: grid;
         grid-template-areas:
@@ -249,16 +249,29 @@ body {
         grid-area: card__1;
         grid-column: 1/2;
         max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: flex-start;
     }
 
     .card__1.top h2,
     .card__1.top p {
-        align-self: flex-start;
+        align-self: center;
         text-align: right;
     }
 
     .btn p {
         display: none;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+
+    }
+
+    .card__1.button {
+        align-self: center;
     }
 
 }
@@ -475,6 +488,7 @@ begin .card__5 */
 
 @media screen and (min-width: 1024px) {
     .card__8 {
+        margin-top: 5rem;
         grid-area: "card__8";
         grid-row: 1/2;
         grid-column: 2/3;
@@ -485,8 +499,11 @@ begin .card__5 */
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 310px;
+        width: 300px;
         max-width: 450px;
         max-height: 450px;
+
 
     }
 
