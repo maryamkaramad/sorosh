@@ -1,8 +1,16 @@
-/* begin footer */
-.footer {}
-
 /* begin footer-up */
 .upper-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* begin header */
+.d-none {
+    display: none;
+}
+
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +60,12 @@
     border-radius: 5rem;
     display: inline-block;
     padding: 4px 7px;
+}
+
+.header_container {
+    width: 80%;
+    height: 300px;
+    margin: 2rem;
 
 }
 
@@ -111,6 +125,46 @@
     }
 }
 
+/* end header */
+
+/* header_mobile */
+.fa-bars {
+    border: 1px solid #d1d1d1;
+    ;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.header_mobile {
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    .header_mobile {
+        display: none;
+    }
+}
+
+/* end header_mobile */
+
+/* begin header_pc */
+
+
+@media screen and (min-width: 320px) {
+    .header-pc {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .footer_down {
         height: 200px;
@@ -119,6 +173,10 @@
     .footer_down .logo {
         height: 78px;
         width: 153px;
+    }
+
+    .header-pc {
+        display: none;
     }
 }
 
@@ -136,6 +194,59 @@
         max-width: 450px;
     }
 
+    /* end fooder_down */
+    .header-pc {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .header_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #b9b9b9;
+        width: 90%;
+    }
+
+    .header_item .icon {
+        display: flex;
+        gap: 1rem;
+        align-self: end;
+    }
+
+    .header_item .contant {
+        display: flex;
+        gap: 10rem;
+        font-size: medium;
+    }
+
+    .header_item a:hover {
+        cursor: pointer;
+        color: #1c7692;
+    }
 }
 
-/* end fooder_down */
+/* begin burger_menu */
+.burger_menu {
+    margin-top: 2rem;
+    width: 90%;
+    color: #b9b9b9;
+    line-height: 1.3125;
+    font-size: medium;
+}
+
+
+
+hr {
+    color: #b9b9b9;
+}
+
+
+@media screen and (min-width: 320px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+
+/* end burger_menu */
