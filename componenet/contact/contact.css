@@ -1,0 +1,406 @@
+@font-face {
+  font-family: 'iranyekan';
+  src: url('../font/Yekan.ttf') format("ttf");
+  src: url('../font/Yekan.svg') format("svg"),
+      url('../font/Yekan.woff2') format("woff2"),
+      url('../font/Yekan.woff') format("woff"),
+      url('../font/Yekan.eot') format("eot");
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?5nrtx2');
+  src:  url('fonts/icomoon.eot?5nrtx2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5nrtx2') format('truetype'),
+    url('fonts/icomoon.woff?5nrtx2') format('woff'),
+    url('fonts/icomoon.svg?5nrtx2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chronometer:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e900";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e901";
+}
+.icon-search:before {
+  content: "\e986";
+}
+
+/* ???چه طوری دیو هامو بیارم وسط  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 80%;
+  display: grid;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 1fr 0.5fr; */
+  grid-template-areas: 
+  'title'
+  'side2'
+  'side1'
+  'footnote';
+  gap: 40px;
+  
+}
+
+/* begin title*/
+.img-title{
+  height: 70px;
+  width: 30%;
+}
+ 
+h1{
+  font-size: 15px;
+  text-align: center;
+  color: rgb(52, 51, 51);
+}
+
+.title{
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+/* end title */
+
+/* begin side2 */
+.side2{
+  grid-area: side2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+ 
+}
+
+.input-f input{
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  width: 150%;
+  height: 30px;
+  font-size: 10px;
+  margin-top: 10px; 
+  padding: 10px;
+  
+}
+.input1{
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  width: 150%;
+  height: 30px;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.input2{
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  width: 150%;
+  height: 30px;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.textarea-input{
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  width: 150%;
+  height: 120px;
+  height: 30px;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+.side2-button{
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  height: 27px;
+  font-size: 10px;
+  color: white;
+  width: 150%;
+  margin-top: 10px;
+  
+}
+.text1{
+  font-size: 12px;
+  /* ؟؟؟اگه فونتشو زیاد کنم میزنه بیرون */
+}
+.f-support{
+  display: flex;
+  flex-direction: row-reverse;
+}
+/* end side2 */
+
+/* begin side1 */
+.side1{
+  grid-area: side1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  padding:5px 15px 0 15px;
+  height: 170px;
+  width: 90%;
+  border-radius: 8px;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  vertical-align: baseline;
+}
+
+.side1-text1{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+}
+.side1-text2{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+}
+
+.side1-text3{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 15px;
+}
+.icon-location{
+  font-size: 1.5rem;
+}
+.icon-mail-envelope-closed{
+  font-size: 1.5rem;
+}
+
+.icon-chronometer{
+  font-size: 1.5rem;
+}
+/* end side1 */
+
+/* start footnote */
+.footnote{
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.text-footnote{
+  text-align: center;
+  color: rgb(52, 51, 51);
+}
+.padding1{
+  display: flex;
+  justify-content: center;
+  /* ???وسط نمیاد */
+  color: white;
+  border: 2px solid ;
+  background-color:rgb(122,122,122);
+  border-radius: 40px;
+  text-align: center;
+  height: 33px;
+  width: 50%;
+  padding: 10px;
+}
+.flex-footnote{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.padding2{
+  color: white;
+  border: 2px solid;
+  background: rgb(122,122,122);
+  border-radius: 40px;
+  text-align: center;
+  height: 33px;
+  width: 50%;
+  padding: 10px;
+
+}
+.padding3{
+  color: white;
+  border: 2px solid;
+  background: rgb(122,122,122);
+  border-radius: 40px;
+  text-align: center;
+  height: 33px;
+  width: 50%;
+  padding: 10px;
+
+}
+/* end footnote */
+
+
+/* mobile */
+ @media only screen and (min-width: 320px) {
+  .container{
+    display: grid;
+  }
+  } 
+
+
+  @media only screen and (min-width:667px) {
+    .title{
+      margin-top: 70px;
+    }
+    .img-title{
+      width: 40%;
+      height: 200px;
+    }
+    h1{
+      font-size: 2.5rem;
+      color: rgb(52, 51, 51);
+    }
+    .footnote{
+      
+    }
+    .input-f {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      
+
+    }
+    .input-f1{
+      width: 30%;
+      
+    }
+    .input-f2{
+      width: 30%;
+    }
+    .input1{
+      width: 150%;
+    }
+    .input2{
+      width: 150%;
+    }
+
+    .side1{
+      font-size: 1rem;
+      height: 250px;
+      width: 95%;
+      
+    }
+    .text-footnote{
+      font-size: 2rem;
+      color: rgb(52, 51, 51);
+
+    }
+    .padding1{
+      font-size: 1rem;
+      max-width: 35%;
+      height: 50px;
+    }
+    .padding2{
+      font-size: 1rem;
+      max-width: 35%;
+      height: 50px;
+    }
+    .padding3{
+      font-size: 1rem;
+      max-width: 35%;
+      height: 50px;
+    }
+  } 
+
+  @media only screen and (min-width: 1024px) {
+    .title{
+      margin-top: 100px;
+    }
+    .img-title{
+      width: 36%;
+      height: 300px;
+    }
+    h1{
+      font-size: 2.5rem;
+      color: rgb(52, 51, 51);
+    }
+    .side{
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+    }
+    .side1{
+      max-width: 35%;
+      height: 289px;
+    }
+    .side2{
+      max-width: 35%;
+      height: 289px;
+    }
+    .input-f input{
+      max-width: 150%;
+    }
+    .input1{
+      max-width: 150%;
+    }
+    .input2{
+      max-width: 150%;
+    }
+    /* ???هم اندازه نشد */
+    .text-footnote{
+      font-size: 2rem;
+      color: rgb(52, 51, 51);
+      margin-top: 20px;
+
+    }
+    .flex-footnote{
+      margin-top: 20px;
+    }
+    .padding1{
+      font-size: 1rem;
+      max-width: 20%;
+      height: 50px;
+    }
+    .padding2{
+      font-size: 1rem;
+      max-width: 20%;
+      height: 50px;
+    }
+    .padding3{
+      font-size: 1rem;
+      max-width: 20%;
+      height: 50px;
+    }
+
+  }   
