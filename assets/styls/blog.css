@@ -6,6 +6,13 @@ body {
     position: relative;
 }
 
+:root {
+    --color-more__information: darkgrey;
+    --color-text: #505050;
+    --color-text-a-hove: rgba(16, 94, 114, 0.8);
+}
+
+
 .body_container {
     width: 100%;
 
@@ -126,26 +133,17 @@ body {
     height: 39%;
 }
 
-@media screen and (min-width: 320px) {
-    .footer_down {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 1rem;
-        height: 120px;
-    }
 
-    .icon__footer {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .footer_down .logo {
-        height: 45px;
-        width: 100px;
-    }
+.icon__footer {
+    display: flex;
+    gap: 2rem;
 }
+
+.footer_down .logo {
+    height: 45px;
+    width: 100px;
+}
+
 
 /* end header */
 
@@ -292,20 +290,7 @@ hr {
 
 
 /* end burger_menu */
-@font-face {
-    font-family: 'iranyekan';
-    src: url('../font/Yekan.ttf') format("ttf");
-    src: url('../font/Yekan.svg') format("svg"),
-        url('../font/Yekan.woff2') format("woff2"),
-        url('../font/Yekan.woff') format("woff"),
-        url('../font/Yekan.eot') format("eot");
-}
 
-:root {
-    --color-more__information: darkgrey;
-    --color-text: #505050;
-    --color-text-a-hove: rgba(16, 94, 114, 0.8);
-}
 
 /* work sorosh start*/
 .blog {
