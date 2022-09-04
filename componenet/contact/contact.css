@@ -10,11 +10,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5nrtx2');
-  src:  url('fonts/icomoon.eot?5nrtx2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5nrtx2') format('truetype'),
-    url('fonts/icomoon.woff?5nrtx2') format('woff'),
-    url('fonts/icomoon.svg?5nrtx2#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ob65xh');
+  src:  url('fonts/icomoon.eot?ob65xh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ob65xh') format('truetype'),
+    url('fonts/icomoon.woff?ob65xh') format('woff'),
+    url('fonts/icomoon.svg?ob65xh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -48,101 +48,68 @@
   content: "\e986";
 }
 
-/* ???چه طوری دیو هامو بیارم وسط  */
 *{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-.main{
+/* begin main */
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container{
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, fr);
-  grid-template-rows: repeat(3, fr);
-  grid-template-areas: 
-  'title'
-  'side2'
-  'side1'
-  'footnote';
-  gap: 40px;
-  
-}
 
-/* begin title*/
-.img-title{
-  height: 70px;
-  width: 30%;
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 90%;
 }
- 
-h1{
+.logo{
+  height: 100px;
+  width: 70%;
+}
+h2{
   font-size: 15px;
   text-align: center;
   color: rgb(52, 51, 51);
 }
-
-.title{
-  grid-area: title;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.main_top{
   margin-top: 40px;
-  gap: 10px;
-}
-/* end title */
-
-/* begin side */
-.side{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/* end side */
-/* begin side2 */
-.side2{
-  grid-area: side2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
- 
-}
-
-.input-f input{
-  border: 1px solid rgb(237, 228, 228);
-  border-radius: 20px;
-  width: 150%;
-  height: 30px;
-  font-size: 10px;
-  margin-top: 10px; 
-  padding: 10px;
-  
 }
 .input1{
   border: 1px solid rgb(237, 228, 228);
   border-radius: 20px;
-  width: 150%;
-  height: 30px;
   font-size: 10px;
-  margin-top: 10px;
+  margin-top: 10px; 
   padding: 10px;
+  width: 90%;
 }
 .input2{
   border: 1px solid rgb(237, 228, 228);
   border-radius: 20px;
-  width: 150%;
-  height: 30px;
   font-size: 10px;
-  margin-top: 10px;
+  margin-top: 10px; 
+  padding: 10px;
+  width: 90%;
+}
+.input3{
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  font-size: 10px;
+  margin-top: 10px; 
   padding: 10px;
 }
-.textarea-input{
+.input4{
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  font-size: 10px;
+  margin-top: 10px; 
+  padding: 10px;
+}
+.input5{
   border: 1px solid rgb(237, 228, 228);
   border-radius: 20px;
   width: 150%;
@@ -151,189 +118,117 @@ h1{
   font-size: 10px;
   margin-top: 10px;
   padding: 10px;
+}
 
+.main_left{
+font-size: 10px;
+padding:5px 15px 0 15px;
+height: 170px;
+width: 90%;
+border-radius: 8px;
+background: linear-gradient(to left, #7a60ff, #cd9ffa);
+vertical-align: baseline;
+color: white;
 }
-.side2-button{
-  border: 1px solid rgb(237, 228, 228);
-  border-radius: 20px;
-  background: linear-gradient(to left, #7a60ff, #cd9ffa);
-  height: 27px;
-  font-size: 10px;
-  color: white;
-  width: 150%;
-  margin-top: 10px;
-  
-}
-.text1{
-  font-size: 12px;
-  /* ؟؟؟اگه فونتشو زیاد کنم میزنه بیرون */
-}
-.f-support{
+
+.button1{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-/* end side2 */
+.butoon_2{
+  display: flex;
 
-/* begin side1 */
-.side1{
-  grid-area: side1;
+}
+
+@media only screen and (min-width: 320px) {}
+
+@media only screen and (min-width: 768px) {
+  .main_container {
+      display: grid;
+      width: 90%;
+      grid-template-columns: repeat(2, fr);
+      grid-template-rows: repeat(3, fr);
+      gap: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {}
+
+
+/* end main */
+
+
+/* begin main.top */
+
+
+
+.main_top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 10px;
-  padding:5px 15px 0 15px;
-  height: 170px;
-  width: 90%;
-  border-radius: 8px;
-  background: linear-gradient(to left, #7a60ff, #cd9ffa);
-  vertical-align: baseline;
 }
 
-.side1-text1{
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 15px;
-}
-.side1-text2{
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 15px;
-}
+@media only screen and (min-width: 320px) {}
 
-.side1-text3{
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 15px;
-}
-.icon-location{
-  font-size: 1.5rem;
-}
-.icon-mail-envelope-closed{
-  font-size: 1.5rem;
-}
-
-.icon-chronometer{
-  font-size: 1.5rem;
-}
-/* end side1 */
-
-/* start footnote */
-.footnote{
-  font-size: 10px;
-  box-sizing: border-box;
-}
-
-.text-footnote{
-  text-align: center;
-  color: rgb(52, 51, 51);
-}
-.padding1{
-  display: flex;
-  justify-content: center;
-  /* ???وسط نمیاد */
-  color: white;
-  border: 2px solid ;
-  background-color:rgb(122,122,122);
-  border-radius: 40px;
-  text-align: center;
-  height: 33px;
-  width: 50%;
-  padding: 10px;
-}
-.flex-footnote{
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
-.padding2{
-  color: white;
-  border: 2px solid;
-  background: rgb(122,122,122);
-  border-radius: 40px;
-  text-align: center;
-  height: 33px;
-  width: 50%;
-  padding: 10px;
-
-}
-.padding3{
-  color: white;
-  border: 2px solid;
-  background: rgb(122,122,122);
-  border-radius: 40px;
-  text-align: center;
-  height: 33px;
-  width: 50%;
-  padding: 10px;
-
-}
-/* end footnote */
-
-
-/* mobile */
- @media only screen and (min-width: 320px) {
-  .container{
-    display: grid;
+@media only screen and (min-width: 768px) {
+  .main_top {
+      grid-column: 1/3;
+      grid-row: 1/2;
   }
-  } 
 
-
-  @media only screen and (min-width:667px) {
-    .title{
+  .main_top{
       margin-top: 70px;
     }
-    .img-title{
+    .logo{
       width: 40%;
       height: 200px;
     }
-    h1{
+    h2{
       font-size: 2.5rem;
       color: rgb(52, 51, 51);
     }
-    .footnote{
-      
-    }
-    .input-f {
+
+    .fname {
       display: flex;
       flex-direction: row;
       gap: 50px;
       
 
     }
-    .input-f1{
+    .input1{
       width: 30%;
       
     }
-    .input-f2{
+    .input2{
       width: 30%;
     }
-    .input1{
+    .input3{
       width: 150%;
     }
-    .input2{
+    .input4{
+      width: 150%;
+    }
+    .send{
       width: 150%;
     }
 
-    .side1{
+    .main_left{
       font-size: 1rem;
       height: 250px;
       width: 95%;
       
     }
-    .text-footnote{
+    .main_button{
       font-size: 2rem;
       color: rgb(52, 51, 51);
 
     }
+    h3{
+      font-size: 1rem;
+  }
     .padding1{
       font-size: 1rem;
       max-width: 35%;
@@ -349,66 +244,161 @@ h1{
       max-width: 35%;
       height: 50px;
     }
-  } 
+}
 
-  @media only screen and (min-width: 1024px) {
-    .title{
-      margin-top: 100px;
-    }
-    .img-title{
-      width: 36%;
-      height: 300px;
-    }
-    h1{
-      font-size: 2.5rem;
-      color: rgb(52, 51, 51);
-    }
-    .side{
+@media only screen and (min-width: 1024px) {}
+
+
+/* end maintop */
+
+/* begin main right */
+
+
+.main_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  
+  
+  
+}
+
+.fname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+}
+button{
+  margin-top: 13px;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  border: 1px solid rgb(237, 228, 228);
+  border-radius: 20px;
+  height: 27px;
+  font-size: 10px;
+  color: white;
+  width: 50%;
+}
+
+.main_right button {
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) {}
+
+@media only screen and (min-width: 768px) {
+  .main_right {
+      width: 80%;
+      grid-column: 1/2;
+
+
+  }
+
+  .main_right.button {
+      width: 103%;
+  }
+
+  .fname {
       display: flex;
       flex-direction: row;
-      gap: 70px;
-    }
-    .side1{
-      max-width: 35%;
-      height: 289px;
-    }
-    .side2{
-      max-width: 35%;
-      height: 289px;
-    }
-    .input-f input{
-      max-width: 150%;
-    }
-    .input1{
-      max-width: 150%;
-    }
-    .input2{
-      max-width: 150%;
-    }
-    /* ???هم اندازه نشد */
-    .text-footnote{
-      font-size: 2rem;
-      color: rgb(52, 51, 51);
-      margin-top: 20px;
+      gap: 0.5rem;
+  }
 
-    }
-    .flex-footnote{
-      margin-top: 20px;
-    }
-    .padding1{
-      font-size: 1rem;
-      max-width: 20%;
-      height: 50px;
-    }
-    .padding2{
-      font-size: 1rem;
-      max-width: 20%;
-      height: 50px;
-    }
-    .padding3{
-      font-size: 1rem;
-      max-width: 20%;
-      height: 50px;
-    }
+  #lname,
+  #shname,
+  #textarea {
+      width: 100%;
 
-  }   
+  }
+
+  #fname {
+      max-width: 45%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+  #fname {
+      width: 100%;
+  }
+}
+
+
+/* end main top */
+
+
+/* begin main_left */
+
+.contant {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+@media only screen and (min-width: 320px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}
+
+/* end main_left */
+
+/* begin main_button */
+
+.main_button {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (min-width: 320px) {}
+
+@media only screen and (min-width: 768px) {
+  .main_button {
+      grid-column: 1/3;
+      grid-row: 3/3;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 30%;
+  }
+
+  .butoon_2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+      .main_left{
+        font-size: 1.3rem;
+      }
+
+      .padding1{
+          font-size: 1rem;
+          max-width: 100%;
+          height: 50px;
+        }
+        .padding2{
+          font-size: 1rem;
+          max-width: 100%;
+          height: 50px;
+        }
+        .padding3{
+          font-size: 1rem;
+          max-width: 100%;
+          height: 50px;
+        }
+
+  }
+
+  /* end main_button */

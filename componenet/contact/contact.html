@@ -1,117 +1,83 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سروش پلاس</title>
-    <link rel="stylesheet" href="assert/normaliz.css">
-    <link rel="stylesheet" href="assert/style.css">
-    <link rel="stylesheet" href="contact.css">
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/d8f6818e5d/UntitledProject/style.css">
+    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/76af7b1cef/UntitledProject/style.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <script src='https://kit.fontawesome.com/d8b16f7d29.js'></script>
-    
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/d8b16f7d29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="main">
-        <div class="container">
-        <div class="title">
-           <img class="img-title" src="picture/logo.png">
-           <h1 class="text-title">ارتباط, زندگی, سرگرمی</h1>
-
+      <div class="main_container">
+        <div class="main_top">
+          <img class="logo" src="picture/logo.png" width="40%" height="40%" alt="" />
+          <h2>ارتباط، زندگی، سرگرمی</h2>
+        </div>
+        <div class="main_right">
+          <div class="fname">
+            <input class="input1" type="text" id="fname" placeholder="نام" />
+            <input class="input2" type="text" id="lname" placeholder="نام خانوادگی" />
+          </div>
+          <input class="input3" type="text" id="lname" placeholder=" پست الکترونیکی"  />
+          <input class="input4" type="text" id="shname" placeholder=" شماره همراه" />
+          <textarea class="input5" id="textarea" placeholder="پیام" ></textarea>
+          <button class="send">ارسال</button>
         </div>
 
-        <div class="side">
-            <div class="side2">
-                <form id="contact_form" action method="post">
-    
-                    <div class="input-f">
-                        <div class="input-f1">
-                            
-                            <input type="text" id="fname" class="form-input" name="firstname" placeholder="نام">
-                        </div>
-                        
-                        <div class="input-f2">                
-                            
-                            <input type="text" id="lname" class="form-input" name="lastname" placeholder="نام خانوادگی">
-                        </div>
-    
-                    </div>
-                
-              
-     
-                    <input class = "input1" type="email" id="email" class="form-input" name="email" placeholder="پست الکترونیکی">
-                    <br>
-        
-                 
-                    <input class = "input2"  type="text" id="phone" class="form-input" name="phone" placeholder="شماره همراه"><br>
-        
-                  
-                   
-                    <textarea class="textarea-input" id="message" placeholder="پیام" name="message"></textarea><br>
-                    
-                
-                    <button class ="side2-button" id="contact_submit" class="button" type="submit" name="button">
-                        <a>ارسال</a>
-                    </button>
-                    <br>
-                    <br>
-                </form>
+        <div class="main_left">
+          <div class="contants">
+            <div class="contant contant1">
+              <span class="icon-chronometer"></span>
+              <!-- <i class="fa fa-address-book fa-2x" aria-hidden="true"></i> -->
+              <div>
+                <p>آدرس</p>
+                <p>
+                  تھران، خیابان شھید دکتر بھشتی،روبری خیابان قنبرزاده، پلاک ٢٧۶،
+                  ساختمان مهام، طبقه اول
+                </p>
               </div>
-            <div class="side1">
-
-                <div class="side1-text1">
-                       <span class="icon-location"></span>
-                        <div class="text1">
-                            <br>
-                            <p>آدرس</p>
-                            <p> تهران, خیابان شهید دکتر بهشتی,روبروی</p>
-                            <p>خیابان قنبرزاده,پلاک ۲۶۷, ساختمان</p>
-                            <p>مهام, طبقه اول</p>
-                        </div>                       
-                    </div>
-                    <br>
-        
-                <div class="side1-text2">
-                    <span class="icon-mail-envelope-closed"></span>
-                    <div class="text2">
-                        <p>پست الکترونیکی</p>
-                        <p>SUPPORT@SPLUS.IR</p>
-                    </div>
-                    
-                </div>    
-                
-                    
-                    <br>
-                
-                <div class="side1-text3">
-                    <span class="icon-chronometer"></span>
-                    <div class="text3">
-                        <p>ربات پشتیبانی ۲۴ ساعته</p>
-                        <p class="f-support">support@</p>
-                    </div>
-                </div>    
-                </div>
+              
             </div>
-               
-        <div class="footnote">
-            <div class="padding1">فرصت های شغلی</div>
-            <h2 class="text-footnote">پرداخت درون کانالی</h2>
-            <div class="flex-footnote">
-                <div class="padding2">فرم افراد حقوقی</div>
-                <div class="padding3">فرم افراد حقیقی</div>
+            <div class="contant contant2">
+              <span class="icon-location"></span>
+              <div>
+                <p>پست الکترونیکی</p>
+                <p>support@splus.ir</p>
+              </div>
             </div>
-        </div>
-        </div>
-        </div>
+            <div class="contant contant3">
+              <span class="icon-mail-envelope-closed"></span>
+              <div>
+                <p>ربات پشتیبانی ۲۴ ساعته</p>
+                <p>@support</p>
+              </div>
+            </div>
+          </div>
 
+        </div>
+        <div class="main_button">
+          <div class="button1">
+            <button class="padding1">فرصت ها ی شغلی</button>
+            <h3>فرم پرداخت درون کانالی</h3>
+          </div>
+
+            <div class=" butoon_2">
+              <button class="padding2">فرم افراد حقیقی</button>
+              <button class="padding3">فرم افراد حقوقی</button>
+          </div>
+        </div>
+      
     </div>
-    
-</body>
+  </body>
 </html>
-
-
