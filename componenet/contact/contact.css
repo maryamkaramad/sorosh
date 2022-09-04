@@ -67,6 +67,9 @@
   align-items: center;
   width: 90%;
 }
+/* end maain */
+
+/* begin main_top */
 .logo{
   height: 100px;
   width: 70%;
@@ -79,58 +82,118 @@ h2{
 .main_top{
   margin-top: 40px;
 }
+/* end main_top */
+
+
+/* begin main_right */
+.main_right{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
 .input1{
   border: 1px solid rgb(237, 228, 228);
-  border-radius: 20px;
   font-size: 10px;
   margin-top: 10px; 
-  padding: 10px;
-  width: 90%;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  width: 100%!important;
+  height: 42px;
+  padding: 0 1rem;
+  background: #fff;
+  
 }
 .input2{
   border: 1px solid rgb(237, 228, 228);
-  border-radius: 20px;
   font-size: 10px;
   margin-top: 10px; 
-  padding: 10px;
-  width: 90%;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  width: 100%!important;
+  height: 42px;
+  padding: 0 1rem;
+  background: #fff;
 }
 .input3{
   border: 1px solid rgb(237, 228, 228);
-  border-radius: 20px;
   font-size: 10px;
   margin-top: 10px; 
-  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  width: 100%!important;
+  height: 42px;
+  padding: 0 1rem;
+  background: #fff;
 }
 .input4{
   border: 1px solid rgb(237, 228, 228);
-  border-radius: 20px;
   font-size: 10px;
   margin-top: 10px; 
-  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  width: 100%!important;
+  height: 42px;
+  padding: 0 1rem;
+  background: #fff;
 }
 .input5{
   border: 1px solid rgb(237, 228, 228);
-  border-radius: 20px;
-  width: 150%;
-  height: 120px;
-  height: 30px;
   font-size: 10px;
   margin-top: 10px;
-  padding: 10px;
-}
+  width: 100%!important;
+  padding: 1rem;
+  height: 150px;
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 1rem;
 
+}
+.send{
+  width: 100%!important;
+  height: 40px;
+  padding: 0.7rem 2rem;
+  display: inline-block;
+  color: #fff;
+  border-radius: 2rem;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+}
+/* end main_right */
+
+/*begin main left  */
+.contant1{
+  margin-top: 10px;
+}
+.contant{
+  font-size: 11px;
+}
+.icon-mail-envelope-closed{
+  font-size: 2rem;
+}
+.icon-chronometer{
+  font-size: 2rem;
+}
+.icon-location{
+  font-size: 2rem;
+}
 .main_left{
-font-size: 10px;
-padding:5px 15px 0 15px;
-height: 170px;
-width: 90%;
-border-radius: 8px;
-background: linear-gradient(to left, #7a60ff, #cd9ffa);
-vertical-align: baseline;
-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 10px;
+  padding:5px 15px 0 15px;
+  height: 170px;
+  width: 90%;
+  border-radius: 8px;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  vertical-align: baseline;
+  color: white;
 }
+.support{
+  text-align: left;
+}
+/* end main left */
 
+/* begin main_button */
 .button1{
   display: flex;
   flex-direction: column;
@@ -139,9 +202,37 @@ color: white;
 }
 .butoon_2{
   display: flex;
+  
 
 }
-
+.padding1{
+  background: linear-gradient(to right, #838383, #6e6e6e);
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  color: #fff;
+  align-items: center!important;
+  box-shadow: 0 0 25px #d0d0d0;
+  width: 70%;
+}
+.padding2{
+  background: linear-gradient(to right, #838383, #6e6e6e);
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  color: #fff;
+  align-items: center!important;
+  box-shadow: 0 0 25px #d0d0d0;
+  width: 100%;
+}
+.padding3{
+  background: linear-gradient(to right, #838383, #6e6e6e);
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  color: #fff;
+  align-items: center!important;
+  box-shadow: 0 0 25px #d0d0d0;
+  width: 100%;
+}
+/* end main_button */
 @media only screen and (min-width: 320px) {}
 
 @media only screen and (min-width: 768px) {
@@ -246,7 +337,7 @@ color: white;
     }
 }
 
-@media only screen and (min-width: 1024px) {}
+
 
 
 /* end maintop */
@@ -296,7 +387,9 @@ button{
       width: 80%;
       grid-column: 1/2;
 
-
+  }
+  .main_left p{
+    font-size: 1rem;
   }
 
   .main_right.button {
@@ -343,11 +436,6 @@ button{
   column-gap: 1rem;
 }
 
-@media only screen and (min-width: 320px) {}
-
-@media only screen and (min-width: 768px) {}
-
-@media only screen and (min-width: 1024px) {}
 
 /* end main_left */
 
@@ -382,6 +470,10 @@ button{
       .main_left{
         font-size: 1.3rem;
       }
+      .main_left p{
+        font-size: 1rem;
+      }
+    
 
       .padding1{
           font-size: 1rem;
