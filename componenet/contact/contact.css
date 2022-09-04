@@ -84,6 +84,12 @@ h2{
 }
 /* end main_top */
 
+/* begin contant */
+.contant{
+  display: flex;
+  flex-direction: column;
+}
+/* end contant */
 
 /* begin main_right */
 .main_right{
@@ -233,7 +239,12 @@ h2{
   width: 100%;
 }
 /* end main_button */
-@media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 320px) {
+  .contant{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .main_container {
@@ -422,7 +433,10 @@ button{
   }
 }
 
-
+.contant{
+  display: flex;
+  flex-direction: row;
+}
 /* end main top */
 
 
@@ -465,6 +479,11 @@ button{
       justify-content: space-between;
       gap: 10px;
   }
+  .contant{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
   @media only screen and (min-width: 1024px) {
       .main_left{
@@ -473,7 +492,11 @@ button{
       .main_left p{
         font-size: 1rem;
       }
-    
+      .contant{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
 
       .padding1{
           font-size: 1rem;
@@ -493,4 +516,13 @@ button{
 
   }
 
-  /* end main_button */
+  @media only screen and (min-width: 1440px){
+    .main_left{
+      width: 50%;
+    }
+    .contant{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
