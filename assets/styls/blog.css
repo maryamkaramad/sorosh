@@ -381,7 +381,9 @@ i {
 
 
 
-
+.container__blogone {
+    margin-top: 2rem;
+}
 
 .content__blogone {
     font-family: "iranyekan";
@@ -398,6 +400,7 @@ i {
 .content__blogone img {
     width: 270px;
     border-radius: 10px;
+
 }
 
 .button {
