@@ -11,7 +11,14 @@
     --color-text: #333;
 }
 
+.item_header_pc a:hover,
+.burger_menu a:hover {
+    color: var(--color-pink);
+}
 
+.selected {
+    color: blueviolet;
+}
 
 /* begin header */
 .d-none {
@@ -31,7 +38,7 @@
 
 .header_container {
     width: 80%;
-    height: 300px;
+    height: 100px;
     margin: 2rem;
 
 }
@@ -275,7 +282,7 @@
         display: flex;
         padding: 4.68rem 6.25rem;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 20px;
 
     }

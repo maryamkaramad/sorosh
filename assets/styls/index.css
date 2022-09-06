@@ -16,7 +16,7 @@ body {
 }
 
 .main {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,8 +224,8 @@ body {
 
     .card__1.button {
         display: grid;
-        grid-template-rows: repeat(3, 70px);
-        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(3, 43px);
+        grid-template-columns: repeat(4, 64px);
         align-self: flex-start;
 
 
@@ -265,8 +265,8 @@ body {
 
     .card__1.button {
         display: grid;
-        grid-template-rows: repeat(3, 100px);
-        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(3, 43px);
+        grid-template-columns: repeat(4, 64px);
         align-self: auto;
     }
 
@@ -476,7 +476,7 @@ begin .card__5 */
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 70%;
+        max-width: 80%;
         max-height: 100%;
 
 

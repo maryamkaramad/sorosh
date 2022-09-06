@@ -114,7 +114,7 @@ body {
 
 .header_mobile {
 
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -139,6 +139,11 @@ body {
 @media screen and (min-width: 1024px) {
     .header_mobile {
         display: none;
+    }
+
+    img.img__blogone {
+        max-width: 512px;
+        max-height: 512px;
     }
 }
 
@@ -226,7 +231,8 @@ hr {
 
 /* work sorosh start*/
 .blog {
-    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
     align-self: center;
     width: 100%;
 }
@@ -495,7 +501,7 @@ a h1:hover {
 .input__blogone {
     height: 80%;
     width: 75%;
-    background-color: var(--color-white);
+    background-color: var(--color-more__information);
     border-radius: 10px;
     padding-top: 10px;
     padding-left: 35px;
