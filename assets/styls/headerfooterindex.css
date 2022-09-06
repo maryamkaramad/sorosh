@@ -37,7 +37,7 @@
 }
 
 .header_container {
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin: 2rem;
 
@@ -139,6 +139,9 @@
     color: var(--text-gray);
     line-height: 1.3125;
     font-size: medium;
+    background-color: var(--color_white);
+    width: 100%;
+    background: #f5f5f5;
 }
 
 .burger_menu.item {
