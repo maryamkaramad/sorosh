@@ -230,43 +230,13 @@ hr {
 
 
 /* work sorosh start*/
-.blog {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 100%;
-}
-
-@media screen and (min-width: 320px) {}
-
-@media screen and (min-width: 768px) {
-    .blog {
-        justify-self: center;
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .blog {
-        justify-self: center;
-        align-self: center;
-        width: 30%;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .blog {
-        justify-self: center;
-        align-self: center;
-        width: 100%;
-    }
-}
 
 
 .container__blog {
     font-family: "iranyekan";
     color: var(--color-text);
     max-width: 270px;
+    margin: auto;
 }
 
 .img__margin {
@@ -276,7 +246,7 @@ hr {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 1.75;
     font-weight: 700;
     line-height: 1.25;
 }
@@ -312,7 +282,7 @@ h2 {
 
 .more__information:hover {
     color: var(--color-text);
-    border-bottom: 1px solid var(--color-more__information);
+    border-bottom: 1px solid var(--color-white);
 }
 
 .date {
@@ -326,8 +296,18 @@ h2 {
 }
 
 i {
-    color: var(--color-more__information);
+    color: lightgrey;
     margin-bottom: 20px;
+}
+
+.index__blog h1 {
+    max-width: 270px;
+    font-family: "iranyekan";
+}
+
+.index__blog h2 {
+
+    max-width: 270px;
 }
 
 /* work__sorosh end*/
@@ -344,10 +324,14 @@ i {
     .container__blog {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 25px;
         max-width: 60%;
         margin: 0 auto;
         text-align: justify;
+    }
+
+    .index__blog h2 {
+        max-width: 270px;
     }
 }
 
@@ -361,9 +345,13 @@ i {
     .container__blog {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 25px;
         max-width: 60%;
         margin: 0 auto;
+    }
+
+    .index__blog h2 {
+        max-width: 270px;
     }
 }
 
@@ -378,6 +366,10 @@ i {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         max-width: 60%;
+    }
+
+    .index__blog h2 {
+        max-width: 270px;
     }
 
 }
@@ -410,7 +402,7 @@ i {
 }
 
 .button {
-    border: 1px solid var(--color-more__information);
+    border: 1px solid #9b9b9b;
     border-radius: 50px;
     font-size: 10px;
     font-weight: 500;
@@ -423,7 +415,7 @@ i {
 }
 
 .underline {
-    border-bottom: 1px solid var(-color-text);
+    border-bottom: 1px solid #505050;
     color: var(--color-text);
 }
 
@@ -502,7 +494,6 @@ a h1:hover {
     height: 80%;
     width: 75%;
     background-color: #f8f8f8;
-    ;
     border-radius: 10px;
     padding-top: 10px;
     padding-left: 35px;
@@ -539,6 +530,9 @@ a h1:hover {
     background-color: var(--color-text);
     color: var(--color-white);
     padding: 10px 10px;
+    font-family: "iranyekan";
+    width: 15%;
+    margin-bottom: 15px;
 }
 
 .botton__input--blogone:hover {
@@ -613,12 +607,6 @@ a h1:hover {
         width: 100%;
     }
 }
-
-.content__blogone img.img__blogone {
-    width: 100%;
-}
-
-
 
 .footer_down {
     background: url(/assets/img/index/footer.png) #2d2d2d no-repeat;
