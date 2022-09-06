@@ -501,7 +501,8 @@ a h1:hover {
 .input__blogone {
     height: 80%;
     width: 75%;
-    background-color: var(--color-more__information);
+    background-color: #f8f8f8;
+    ;
     border-radius: 10px;
     padding-top: 10px;
     padding-left: 35px;

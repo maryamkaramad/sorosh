@@ -407,13 +407,26 @@
 
 }
 
-@keyframes bounce {
+@keyframes animate__slideOutUp {
     30% {
         -webkit-transform: translateY(-10px);
     }
 }
 
 .blog-box-right:hover {
+    animation: animate__slideOutUp 1s;
+}
+
+.blog-box-left:hover {
+    animation: animate__slideOutUp 1s;
+}
+
+.blog-box-center:hover {
+    animation: animate__slideOutUp 1s;
+}
+
+
+/* .blog-box-right:hover {
     animation: bounce 2s;
 }
 
@@ -423,7 +436,7 @@
 
 .blog-box-center:hover {
     animation: bounce 2s;
-}
+} */
 
 footer {
     margin-top: 75px;
