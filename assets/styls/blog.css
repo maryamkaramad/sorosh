@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url('../../assets/font/Yekan.ttf') format("ttf"),
+        url('../../assets/font/Yekan.svg') format("svg"),
+        url('../../assets/font/Yekan.woff2') format("woff2"),
+        url('../../assets/font/Yekan.woff') format("woff"),
+        url('../../assets/font/Yekan.eot') format("eot");
+}
 body {
     display: flex;
     flex-direction: column;
@@ -245,13 +253,13 @@ hr {
     border-radius: 8px;
 }
 
-h1 {
-    font-size: 1.75;
+h1{
+    font-size: 25px;
     font-weight: 700;
     line-height: 1.25;
 }
 
-a {
+a{
     text-decoration: none;
     color: var(--color-text);
 }
@@ -260,7 +268,7 @@ h1 a:hover {
     color: var(--color-text-a-hove);
 }
 
-h2 {
+.index__blog h2{
     font-size: 20px;
     font-weight: 200;
 }
@@ -364,7 +372,7 @@ i {
     .container__blog {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 25px;
         max-width: 60%;
     }
 
