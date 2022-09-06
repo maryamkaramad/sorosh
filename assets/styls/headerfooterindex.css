@@ -53,10 +53,18 @@
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    background-color: var(--color_white);
     top: 0;
     right: 0;
     width: 100%;
+    background:
+        /* Shadow covers */
+        linear-gradient(var(--cover-color) var(--cover-fade), rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), var(--cover-color) calc(100% - var(--cover-fade)))20 100%,
+        /* Shadows */
+        radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, var(--shadow-intensity)), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, var(--shadow-intensity)), rgba(0, 0, 0, 0)) 20 100%;
+    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+    background-size: 100% var(--cover-size), 100% var(--cover-size), 100% var(--shadow-size), 100% var(--shadow-size);
+    background-attachment: local, local, scroll, scroll;
 }
 
 @media screen and (min-width: 320px) {}
@@ -93,12 +101,19 @@
         justify-content: space-around;
         align-items: center;
         position: fixed;
-        background-color: var(--color_white);
         width: 100%;
         top: 0;
         right: 0;
         height: 50px;
-        box-shadow: rgba(99, 103, 109, 0.1) 0px 10px 10px -10px;
+        background:
+            /* Shadow covers */
+            linear-gradient(var(--cover-color) var(--cover-fade), rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), var(--cover-color) calc(100% - var(--cover-fade)))20 100%,
+            /* Shadows */
+            radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, var(--shadow-intensity)), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, var(--shadow-intensity)), rgba(0, 0, 0, 0)) 20 100%;
+        background-repeat: no-repeat;
+        background-color: #f9f9f9;
+        background-size: 100% var(--cover-size), 100% var(--cover-size), 100% var(--shadow-size), 100% var(--shadow-size);
+        background-attachment: local, local, scroll, scroll;
 
     }
 

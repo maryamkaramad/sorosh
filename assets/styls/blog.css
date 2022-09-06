@@ -622,6 +622,7 @@ a h1:hover {
     height: 120px;
     background-size: 40%;
     z-index: -1;
+    position: fixed;
     position: sticky;
     bottom: 0;
     display: flex;
@@ -689,6 +690,7 @@ a h1:hover {
 @media screen and (min-width: 768px) {
     .footer_down {
         height: 220px;
+        position: fixed;
         position: sticky;
         bottom: 0;
     }
