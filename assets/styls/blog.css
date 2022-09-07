@@ -6,6 +6,7 @@
         url('../../assets/font/Yekan.woff') format("woff"),
         url('../../assets/font/Yekan.eot') format("eot");
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -203,7 +204,7 @@ body {
 
     .header_item a:hover {
         cursor: pointer;
-        color: var(color-text-a-hove);
+        color: blue;
     }
 }
 
@@ -215,8 +216,6 @@ body {
     line-height: 1.3125;
     font-size: medium;
 }
-
-
 
 hr {
     color: var(--color-more__information);
@@ -253,13 +252,13 @@ hr {
     border-radius: 8px;
 }
 
-h1{
+h1 {
     font-size: 25px;
     font-weight: 700;
     line-height: 1.25;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color-text);
 }
@@ -268,7 +267,7 @@ h1 a:hover {
     color: var(--color-text-a-hove);
 }
 
-.index__blog h2{
+.index__blog h2 {
     font-size: 20px;
     font-weight: 200;
 }
