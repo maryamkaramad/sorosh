@@ -395,7 +395,6 @@ i {
 .container__blogone {
     margin-top: 2rem;
 }
-
 .content__blogone {
     font-family: "iranyekan";
     line-height: 1.75;
@@ -438,7 +437,6 @@ i {
 a h1:hover {
     color: var(--color-text-a-hove);
 }
-
 
 @media only screen and (min-width:768px) {
     .content__blogone {
@@ -543,7 +541,7 @@ a h1:hover {
     color: var(--color-white);
     padding: 10px 10px;
     font-family: "iranyekan";
-    width: 15%;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -572,6 +570,9 @@ a h1:hover {
     .web__blogone {
         width: 90%;
     }
+    .botton__input--blogone{
+        width: 32%;
+    }
 }
 
 @media only screen and (min-width:992px) {
@@ -595,6 +596,14 @@ a h1:hover {
     .web__blogone {
         width: 100%;
     }
+    .botton__input--blogone{
+        width: 20%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .botton__input--blogone{
+        width: 20%;
+    }
 }
 
 @media only screen and (min-width:1440px) {
@@ -617,6 +626,9 @@ a h1:hover {
 
     .web__blogone {
         width: 100%;
+    }
+    .botton__input--blogone{
+        width: 20%;
     }
 }
 
