@@ -437,7 +437,11 @@ i {
 a h1:hover {
     color: var(--color-text-a-hove);
 }
-
+@media only screen and (min-width:425px){
+    .content__blogone{
+        width: 55%;
+    }
+} 
 @media only screen and (min-width:768px) {
     .content__blogone {
         width: 65%;
