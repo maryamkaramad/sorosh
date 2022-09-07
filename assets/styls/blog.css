@@ -177,7 +177,7 @@ body {
     .header-pc {
         display: flex;
         gap: 3rem;
-
+        justify-content: space-between;
     }
 
     .header_item {
@@ -217,6 +217,11 @@ body {
     font-size: medium;
 }
 
+.icon a:hover,
+.item a:hover {
+    color: blue;
+}
+
 hr {
     color: var(--color-more__information);
 }
@@ -237,12 +242,13 @@ hr {
 
 
 /* work sorosh start*/
-
+.blog {
+    display: flex;
+}
 
 .container__blog {
     font-family: "iranyekan";
     color: var(--color-text);
-    max-width: 270px;
     margin: auto;
 }
 
@@ -332,8 +338,8 @@ i {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
-        max-width: 60%;
-        margin: 0 auto;
+
+        margin: auto;
         text-align: justify;
     }
 
@@ -353,8 +359,8 @@ i {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
-        max-width: 60%;
-        margin: 0 auto;
+
+        margin: auto;
     }
 
     .index__blog h2 {
@@ -362,7 +368,7 @@ i {
     }
 }
 
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width:1024px) {
     .blog {
         display: flex;
         justify-content: center;
@@ -372,7 +378,7 @@ i {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
-        max-width: 60%;
+
     }
 
     .index__blog h2 {
@@ -396,7 +402,6 @@ i {
     font-size: 16px;
     font-weight: 300;
     width: 55%;
-    max-width: 270px;
     text-align: justify;
     margin: auto;
     color: var(--color-text);
@@ -638,7 +643,7 @@ a h1:hover {
 
 .footer p {
     line-height: 1.75;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--color-text);
     text-align: justify;
