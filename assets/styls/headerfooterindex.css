@@ -43,12 +43,6 @@
 
 }
 
-@media screen and (min-width: 320px) {}
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1024px) {}
-
 /* end header */
 
 /* header_mobile */
@@ -73,10 +67,6 @@
     background-size: 100% var(--cover-size), 100% var(--cover-size), 100% var(--shadow-size), 100% var(--shadow-size);
     background-attachment: local, local, scroll, scroll;
 }
-
-@media screen and (min-width: 320px) {}
-
-@media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {
     .header_mobile {
@@ -150,11 +140,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
-@media screen and (min-width: 320px) {}
-
-@media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1024px) {
     .burger_menu {
