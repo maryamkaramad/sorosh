@@ -7,9 +7,4 @@ menu.addEventListener("click", function (e) {
     burger_menu.classList.toggle("d-none") });
 
 
-
-    const header_mobile=document.querySelector("header_mobile");
-    const header_pc=document.querySelector("header_pc");
-
-
   
