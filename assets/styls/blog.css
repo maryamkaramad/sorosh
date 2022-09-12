@@ -570,7 +570,12 @@ a h1:hover {
 
     .information__blogone {
         display: flex;
-        justify-content: space-between;
+        gap: 3px;
+    }
+
+    .information__blogone input {
+        width: 245px;
+        border-radius: 10px;
     }
 
     .name__blogone {
@@ -603,7 +608,6 @@ a h1:hover {
 
     .information__blogone {
         display: flex;
-        justify-content: space-between;
     }
 
     .name__blogone {
