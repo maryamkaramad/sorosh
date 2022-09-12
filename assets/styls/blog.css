@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'iranyekan';
-    src: url('../../assets/font/Yekan.ttf') format("ttf"),
-        url('../../assets/font/Yekan.svg') format("svg"),
-        url('../../assets/font/Yekan.woff2') format("woff2"),
-        url('../../assets/font/Yekan.woff') format("woff"),
-        url('../../assets/font/Yekan.eot') format("eot");
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -16,11 +7,9 @@ body {
 }
 
 :root {
-    --color-more__information: darkgrey;
     --color-text: #505050;
     --color-text-a-hove: rgba(16, 94, 114, 0.8);
     --color-white: rgb(255, 255, 255);
-    font-family: "iranyekan";
 }
 
 
@@ -49,7 +38,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: var(--color-more__information);
+    color: darkgrey;
 }
 
 .upper-footer .container {
@@ -89,7 +78,7 @@ body {
 /* begin border_footer */
 
 .border_footer.border {
-    border: 0.1rem solid var(--color-more__information);
+    border: 0.1rem solid darkgrey;
     border-radius: 5rem;
     display: inline-block;
     padding: 2px 7px;
@@ -105,7 +94,7 @@ body {
 @media screen and (min-width: 1024px) {}
 
 .fa-bars {
-    border: 1px solid var(--color-more__information);
+    border: 1px solid darkgrey;
     ;
     padding: 0.5rem;
     cursor: pointer;
@@ -168,7 +157,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        color: var(--color-more__information);
+        color: darkgrey;
         width: 90%;
     }
 
@@ -176,14 +165,14 @@ body {
         display: flex;
         gap: 1rem;
         align-self: end;
-        color: var(--color-more__information);
+        color: darkgrey;
     }
 
     .header_item .contant {
         display: flex;
         gap: 10rem;
         font-size: medium;
-        color: var(--color-more__information);
+        color: darkgrey;
     }
 
     .header_item a:hover {
@@ -197,7 +186,7 @@ body {
     margin-right: 2rem;
     margin-top: 2rem;
     width: 86%;
-    color: var(--color-more__information);
+    color: darkgrey;
     line-height: 1.3125;
     font-size: medium;
 }
@@ -208,7 +197,7 @@ body {
 }
 
 hr {
-    color: var(--color-more__information);
+    color: darkgrey;
 }
 
 @media screen and (min-width: 1024px) {
@@ -227,7 +216,6 @@ hr {
 }
 
 .container__blog {
-    font-family: "iranyekan";
     color: var(--color-text);
     margin: auto;
 }
@@ -250,7 +238,7 @@ a {
 }
 
 h1 a:hover {
-    color: var(--color-text-a-hove);
+    color: rgba(16, 94, 114, 0.8);
 }
 
 .index__blog h2 {
@@ -275,7 +263,7 @@ h1 a:hover {
 
 .more__information:hover {
     color: var(--color-text);
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid white;
 }
 
 .date {
@@ -295,7 +283,6 @@ i {
 
 .index__blog h1 {
     max-width: 270px;
-    font-family: "iranyekan";
 }
 
 .index__blog h2 {
@@ -377,7 +364,6 @@ i {
 }
 
 .content__blogone {
-    font-family: "iranyekan";
     line-height: 1.75;
     font-size: 16px;
     font-weight: 300;
@@ -412,11 +398,11 @@ i {
 }
 
 .underline:hover {
-    border-bottom: var(--color-white);
+    border-bottom: white;
 }
 
 a h1:hover {
-    color: var(--color-text-a-hove);
+    color: rgba(16, 94, 114, 0.8);
 }
 
 @media only screen and (min-width:425px) {
@@ -506,34 +492,33 @@ a h1:hover {
 .name__blogone {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid var(--color-white);
+    border: 1px solid white;
 }
 
 .email__blogone {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid var(--color-white);
+    border: 1px solid white;
 }
 
 .web__blogone {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 20px;
-    border: 1px solid var(--color-white);
+    border: 1px solid white;
 }
 
 .botton__input--blogone {
     border-radius: 50px;
     background-color: var(--color-text);
-    color: var(--color-white);
+    color: white;
     padding: 10px 10px;
-    font-family: "iranyekan";
     width: 100%;
     margin-bottom: 15px;
 }
 
 .botton__input--blogone:hover {
-    background-color: var(--color-text-a-hove);
+    background-color: rgba(16, 94, 114, 0.8);
     cursor: pointer;
 }
 
@@ -723,14 +708,14 @@ a h1:hover {
 }
 
 .icon a {
-    color: var(--color-more__information);
+    color: darkgrey;
 }
 
 .contant a {
 
-    color: var(--color-more__information);
+    color: darkgrey;
 }
 
 .item a {
-    color: var(--color-more__information);
+    color: darkgrey;
 }
