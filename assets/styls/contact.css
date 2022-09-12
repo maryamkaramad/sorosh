@@ -89,8 +89,6 @@
     animation-duration: 2s;
 }
 
-@media only screen and (min-width: 320px) {}
-
 @media only screen and (min-width: 768px) {
     .main_top {
         grid-column: 1/3;
@@ -103,9 +101,6 @@
         max-height: 600px;
     }
 }
-
-@media only screen and (min-width: 1024px) {}
-
 
 /* end maintop */
 
@@ -160,8 +155,6 @@ button.border,
 .main_right button {
     width: 100%;
 }
-
-@media only screen and (min-width: 320px) {}
 
 @media only screen and (min-width: 768px) {
     .main_right {
@@ -230,8 +223,6 @@ button.border,
     text-align: left;
 }
 
-@media only screen and (min-width: 320px) {}
-
 @media only screen and (min-width: 768px) {
     .main_left {
         display: flex;
@@ -244,8 +235,6 @@ button.border,
 
     }
 }
-
-@media only screen and (min-width: 1024px) {}
 
 /* end main_left */
 
@@ -261,8 +250,6 @@ button.border,
     animation: headShake;
     animation-duration: 2s;
 }
-
-@media only screen and (min-width: 320px) {}
 
 @media only screen and (min-width: 768px) {
     .main_button {
@@ -287,8 +274,6 @@ button.border,
         gap: 10px;
     }
 }
-
-@media only screen and (min-width: 1024px) {}
 
 /* end main_button */
 /* end body */
